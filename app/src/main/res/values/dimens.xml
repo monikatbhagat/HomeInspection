@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="title_size">20dp</dimen>
+
+    <!--Home-->
+    <dimen name="add_property_width">320dp</dimen>
+    <dimen name="add_property_height">42dp</dimen>
+    <dimen name="add_property_textsize">20dp</dimen>
+    <dimen name="add_property_adresstextsize">15dp</dimen>
+    <dimen name="quotation_textsize">20dp</dimen>
+    <dimen name="item_text">110dp</dimen>
+
+    <!--Inside Home-->
+    <dimen name="quotation_width">280dp</dimen>
+    <dimen name="item_height">40dp</dimen>
+    <dimen name="item_text_size">15dp</dimen>
+    <dimen name="pdfview_height">500dp</dimen>
+
+    <dimen name="publish_textsize">15dp</dimen>
+
+
+</resources>

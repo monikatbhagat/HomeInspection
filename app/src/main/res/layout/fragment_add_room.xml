@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+
+    <com.example.bcod2.homeinspection.utilities.CustomFontTextView
+        android:id="@+id/tv_UpdateProperty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:fontc="@string/font_name_Robot_Bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_RoomName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/et_RoomName"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_white_background"
+        android:ems="10"
+        android:hint="@string/room_name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_RoomDes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_UpdateProperty" />
+
+
+    <EditText
+        android:id="@+id/et_RoomDes"
+        android:layout_width="300dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:focusable="true"
+        android:gravity="top"
+        android:hint="@string/room_description"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_RoomName" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background_white"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Save"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_RoomDes"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/add_site_plus_background"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Update"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/et_RoomDes"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/add_site_plus_background"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_Save"
+        app:layout_constraintTop_toBottomOf="@+id/et_RoomDes"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+</android.support.constraint.ConstraintLayout>

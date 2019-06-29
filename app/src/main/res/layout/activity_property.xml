@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grey_background">
+
+
+    <TextView
+        android:id="@+id/tvAddProperty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/add_property_textsize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/et_NameProperty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_NameProperty"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:background="@drawable/edit_text_white_background"
+        android:hint="@string/property_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddProperty"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_AddressProperty"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edit_text_white_background"
+        android:hint="@string/property_address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_NameProperty" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/add_site_plus_background"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Update"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/et_AddressProperty"
+        app:layout_constraintVertical_bias="0.13999999"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background_white"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_AddressProperty"
+        app:layout_constraintVertical_bias="0.13999999"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/add_site_plus_background"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/et_AddressProperty"
+        app:layout_constraintVertical_bias="0.13999999" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_Quotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:text="xxx"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/quotation_textsize"
+            app:layout_constraintEnd_toStartOf="@+id/tv_Quotation2"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_Quotation2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/quotation_textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_Quotation"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_quotation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Quotation">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_Publish"
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/add_site_plus_background"
+            android:text="@string/quotation"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/add_property_textsize"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_quotation" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

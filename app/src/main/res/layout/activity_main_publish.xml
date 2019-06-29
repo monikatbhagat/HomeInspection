@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/cl_MainPublishActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="90dp"
+    tools:ignore="MissingConstraints">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_Inner_MainPublishActivity"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_Quotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Quotation of"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/quotation_textsize"
+            app:layout_constraintEnd_toStartOf="@+id/tv_HomeName"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_HomeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Home"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/quotation_textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_Quotation"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_LivingRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/living_room"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/publish_textsize"
+            app:layout_constraintBottom_toTopOf="@+id/rv_LivingRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Quotation"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_LivingRoom"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_BedRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_LivingRoom" />
+
+
+        <TextView
+            android:id="@+id/tv_BedRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/bed_room"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/publish_textsize"
+            app:layout_constraintBottom_toTopOf="@+id/rv_BedRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_LivingRoom" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_PowderRoom"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_KitchenRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_PowderRoom" />
+
+
+        <TextView
+            android:id="@+id/tv_PowderRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/Powder_room"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/publish_textsize"
+            app:layout_constraintBottom_toTopOf="@+id/rv_PowderRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_BedRoom" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_BedRoom"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_PowderRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_BedRoom" />
+
+
+        <TextView
+            android:id="@+id/tv_KitchenRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/kitchen"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/publish_textsize"
+            app:layout_constraintBottom_toTopOf="@+id/rv_Kitchen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_PowderRoom" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_Kitchen"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_StudyRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_KitchenRoom" />
+
+
+        <TextView
+            android:id="@+id/tv_StudyRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/study_room"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/publish_textsize"
+            app:layout_constraintBottom_toTopOf="@+id/rv_StudyRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_Kitchen" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_StudyRoom"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_StoreRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_StudyRoom" />
+
+        <TextView
+            android:id="@+id/tv_StoreRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/store_room"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/publish_textsize"
+            app:layout_constraintBottom_toTopOf="@+id/rv_StoreRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_StudyRoom" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_StoreRoom"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_OtherRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_StoreRoom" />
+
+        <TextView
+            android:id="@+id/tv_OtherRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/Other_room"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/publish_textsize"
+            app:layout_constraintBottom_toTopOf="@+id/rv_OtherRoom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_StoreRoom" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_OtherRoom"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_OtherRoom" />
+
+        <Button
+            android:id="@+id/btn_Publish"
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/add_site_plus_background"
+            android:text="@string/publish"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/add_property_textsize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_OtherRoom" />
+
+    </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
